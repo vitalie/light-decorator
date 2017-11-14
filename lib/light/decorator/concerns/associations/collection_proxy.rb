@@ -29,7 +29,7 @@ module Light
 
           def override_scope(options)
             @association.define_singleton_method :scope do |opts = {}|
-              super(opts).decorate(options)
+              super().decorate(options)
             end
           end
 
